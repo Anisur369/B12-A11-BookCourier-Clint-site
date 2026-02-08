@@ -4,7 +4,7 @@ import Footer from "../pages/footer/Footer";
 //  bg-base-200
 function RootLayout() {
   return (
-    <div className="min-h-screen w-[85%] mx-auto">
+    <div className="min-h-screen w-full lg:w-[85%] mx-auto">
       <Header />
       <Outlet />
       <Footer />

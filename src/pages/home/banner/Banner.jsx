@@ -1,24 +1,20 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import bannerImg1 from '../../../../src/assets/banner/banner1.png';
-import bannerImg2 from '../../../../src/assets/banner/banner2.png';
-import bannerImg3 from '../../../../src/assets/banner/banner3.png';
+import bannerImg1 from '../../../../src/assets/banner/banner1.jpg';
+import bannerImg2 from '../../../../src/assets/banner/banner2.jpg';
+import bannerImg3 from '../../../../src/assets/banner/banner3.jpg';
+import bannerImg4 from '../../../../src/assets/banner/banner4.jpg';
+
+const bannerImages = [bannerImg1, bannerImg2, bannerImg3, bannerImg4];
 
 function Banner() {
     return (
-        <Carousel autoPlay={true} infiniteLoop={true} showThumbs={true} showStatus={false} interval={3000}>
-            <div>
-                <img src={bannerImg1} />
-                <p className="legend">Legend 1</p>
-            </div>
-            <div>
-                <img src={bannerImg2} />
-                <p className="legend">Legend 2</p>
-            </div>
-            <div>
-                <img src={bannerImg3} />
-                <p className="legend">Legend 3</p>
-            </div>
+        <Carousel autoPlay={true} infiniteLoop={true} showThumbs={false} showStatus={false} interval={2000}>
+            {bannerImages.map((image, index) => (
+                <div className="w-full h-96" key={index}>
+                    <img src={image} alt={`Banner ${index + 1}`} className="w-full h-full object-cover" />
+                </div>
+            ))}
         </Carousel>
     );
 };
