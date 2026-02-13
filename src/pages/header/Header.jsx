@@ -15,10 +15,10 @@ function Header() {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/books">Books</NavLink>
+        <NavLink to="/books">All Books</NavLink>
       </li>
       <li>
-        <NavLink to="/dashboard/my-parcel">Dashboard</NavLink>
+        <NavLink to="/dashboard">Dashboard</NavLink>
       </li>
       <li>
         <NavLink to="/send-parcel">Send Parcel</NavLink>
@@ -33,7 +33,7 @@ function Header() {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/books">Books</NavLink>
+        <NavLink to="/books">All Books</NavLink>
       </li>
       <li>
         <NavLink to="/dashboard">Dashboard</NavLink>
